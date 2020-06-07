@@ -3,6 +3,9 @@
 #include"Shader.h"
 #include"stb_image.h"
 #include<iostream>
+#include<glm/glm.hpp>
+#include<glm/gtc/matrix_transform.hpp>
+#include<glm/gtc/type_ptr.hpp>
 
 
 
@@ -21,9 +24,21 @@ void processInput(GLFWwindow *window) {
 	}
 }
 
+void transform_operate(int shaderid,float time) {
+
+	glm::mat4 trans = glm::mat4(1.0f);
+	
+	trans = glm::rotate(trans, time, glm::vec3(0.0, 0.0, 1.0));
+	trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+	trans = glm::scale(trans, glm::vec3(0.5f, 0.5f, 0.5f));
+	unsigned int transloc = glGetUniformLocation(shaderid, "transform");
+	glUniformMatrix4fv(transloc, 1, GL_FALSE, glm::value_ptr(trans));
+}
 
 
 int main() {
+
+	
 	glfwInit();//初始化GLFW
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);//opengl的主版本号
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);//opengl的次版本号
@@ -160,8 +175,10 @@ int main() {
 
 		ourShader.use();
 		float timeValue = glfwGetTime();
-		float mixa = (sin(timeValue*2.0*3.14159)+1)*0.5f;
+		float mixa = (sin(timeValue*2.0)+1)*0.5f;
 		ourShader.setFloat("mixa", mixa);
+		//移动
+		transform_operate(ourShader.ID,timeValue);
 		//绘制
 		glBindVertexArray(VAO);//使用绑定的VAO（里面有顶点属性信息）
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);//是从索引缓冲中渲染 不同于glDrawArray
