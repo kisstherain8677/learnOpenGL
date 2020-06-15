@@ -1,4 +1,4 @@
 ﻿  main.cpp
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(177): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(178): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(54): warning C4244: “参数”: 从“const float”转换到“int”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(254): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
   Learn1.vcxproj -> D:\projects\learnOpenGL\self_learn\Learn1\Debug\Learn1.exe
