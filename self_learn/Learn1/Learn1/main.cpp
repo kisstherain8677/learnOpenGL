@@ -6,22 +6,64 @@
 #include<glm/glm.hpp>
 #include<glm/gtc/matrix_transform.hpp>
 #include<glm/gtc/type_ptr.hpp>
+#include"Camera.h"
 
 
+//摄像机变量
+glm::vec3 cameraPos = glm::vec3(0.0, 0.0, 0.0);
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+float yaw = 0.0f, pitch = 0.0f;//偏航角和俯仰角
 
-
+float deltaTime = 0.0f;//当前帧与上一帧的时间差
+float lastFrame = 0.0f;//上一帧的时间
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
 }
 
+//鼠标的回调函数
+bool firstMouse = true;
+float lastX = 400, lastY = 300;
+void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
+
+	if (firstMouse) {
+		lastX = xpos;
+		lastY = ypos;
+		firstMouse = false;
+	}
+	
+	float xoffset = xpos - lastX;
+	float yoffset = lastY - ypos;
+	lastX = xpos;
+	lastY = ypos;
+	
+	camera.ProcessMouseMovement(xoffset, yoffset);
+	
+}
+
+//滚轮缩放
+float fov = 45.0f;
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
+	camera.ProcessMouseScroll(yoffset);
+}
 //处理输入,在渲染循环中调用.用这个方法可以在渲染的时候
 //根据用户输入进行各种处理
-void processInput(GLFWwindow *window) {
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
-		glfwSetWindowShouldClose(window, true);
-	}
+void processInput(GLFWwindow *window)
+{
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        camera.ProcessKeyboard(FORWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        camera.ProcessKeyboard(BACKWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        camera.ProcessKeyboard(LEFT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        camera.ProcessKeyboard(RIGHT, deltaTime);
 }
  
 void transform_operate(int shaderid,float time) {
@@ -70,7 +112,8 @@ int main() {
 	//glViewport(0, 0, 800, 600);
 	//viewport随着窗口改变的回调函数
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
+	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetScrollCallback(window, scroll_callback);
 	//创建着色器对象
 	Shader ourShader("Shaders/shader.vs", "Shaders/shader.fs");
 
@@ -133,7 +176,6 @@ int main() {
 	};
 
 	
-
 
 	unsigned int VBO, VAO, EBO;
 	glGenVertexArrays(1, &VAO);
@@ -200,9 +242,17 @@ int main() {
 	ourShader.use();//set uniform之前要
 	glUniform1i(glGetUniformLocation(ourShader.ID, "texture1"), 0);
 	glUniform1i(glGetUniformLocation(ourShader.ID, "texture2"), 1);
+
 	//ourShader.setInt("texture2", 1);
 	//渲染循环
 	while (!glfwWindowShouldClose(window)) {
+
+		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
+		//计算deltatime
+		float currentTime = glfwGetTime();
+		deltaTime = currentTime - lastFrame;
+		lastFrame = currentTime;
 
 		//处理输入
 		processInput(window);
@@ -224,12 +274,19 @@ int main() {
 
 
 		//创建pvm矩阵
+
+
+
 		glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
 		glm::mat4 view = glm::mat4(1.0f);
 		glm::mat4 projection = glm::mat4(1.0f);
 		//model = glm::rotate(model, (float)glfwGetTime()* glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-		view = glm::translate(view, glm::vec3(1.0f, 0.0f, -3.0f));
-		projection = glm::perspective(glm::radians(45.0f), screenWidth / screenHeight, 0.1f, 100.f);
+		float radius = 10.0f;
+		float camX = sin(glfwGetTime())*radius;
+		float camZ = cos(glfwGetTime())*radius;
+		view = camera.GetViewMatrix();
+
+		projection = glm::perspective(glm::radians(camera.Zoom), screenWidth / screenHeight, 0.1f, 100.f);
 
 		ourShader.use();
 		//把pvm矩阵传递给shader
@@ -243,7 +300,7 @@ int main() {
 		glUniformMatrix4fv(proLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
 
-		//绘制
+	 	//绘制
 		glBindVertexArray(VAO);//使用绑定的VAO（里面有顶点属性信息）
 		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);//是从索引缓冲中渲染 不同于glDrawArray
 		for (int i = 0; i < 10; i++) {
