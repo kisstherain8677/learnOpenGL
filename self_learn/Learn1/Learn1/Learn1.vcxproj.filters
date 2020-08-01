@@ -21,9 +21,6 @@
     <ClCompile Include="..\..\..\lib\libs\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Shader.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -42,5 +39,6 @@
   <ItemGroup>
     <None Include="Shaders\shader.fs" />
     <None Include="Shaders\shader.vs" />
+    <None Include="Shaders\lightFrag.fs" />
   </ItemGroup>
 </Project>
