@@ -1,12 +1,11 @@
 ﻿  main.cpp
 d:\projects\learnopengl\self_learn\learn1\learn1\shader.h(56): warning C4101: “e”: 未引用的局部变量
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(40): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(41): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(45): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(46): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(47): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(48): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(57): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(99): warning C4244: “参数”: 从“const float”转换到“int”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(199): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(161): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(260): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(261): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(265): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(266): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(268): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(269): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(278): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   Learn1.vcxproj -> D:\projects\learnOpenGL\self_learn\Learn1\Debug\Learn1.exe
