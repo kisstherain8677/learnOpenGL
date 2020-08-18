@@ -1,11 +1,21 @@
 ﻿  main.cpp
 d:\projects\learnopengl\self_learn\learn1\learn1\shader.h(56): warning C4101: “e”: 未引用的局部变量
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(187): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(327): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(328): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(332): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(333): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(335): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(336): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(345): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(196): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(232): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(233): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(240): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(241): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(248): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(249): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(256): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(257): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(265): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(266): warning C4305: “参数”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(380): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(381): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(385): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(386): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(388): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(389): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn1\learn1\main.cpp(398): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   Learn1.vcxproj -> D:\projects\learnOpenGL\self_learn\Learn1\Debug\Learn1.exe
