@@ -166,8 +166,8 @@ int main()
 		ourShader.setFloat("pointLight.linear", 0.09f);
 		ourShader.setFloat("pointLight.quadratic", 0.032f);
 
-		ourShader.setVec3("pointLight.ambient", glm::vec3(0.1f));
-		ourShader.setVec3("pointLight.diffuse", glm::vec3(0.8f));
+		ourShader.setVec3("pointLight.ambient", glm::vec3(0.3f));
+		ourShader.setVec3("pointLight.diffuse", glm::vec3(0.9f));
 		ourShader.setVec3("pointLight.specular", glm::vec3(1.0f));
 
 		glm::vec3 lightPos = glm::vec3(0.0f);
