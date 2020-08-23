@@ -24,9 +24,6 @@
     <ClCompile Include="stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Model.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -46,16 +43,22 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\1.light_cube.fs">
+    <None Include="Shaders\model_loading.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="Shaders\1.light_cube.vs">
+    <None Include="Shaders\model_loading.fs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="Shaders\1.colors.fs">
+    <None Include="Shaders\light_cube.vs">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="Shaders\1.colors.vs">
+    <None Include="Shaders\light_cube.fs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shaders\colors.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shaders\colors.fs">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
