@@ -1,0 +1,12 @@
+﻿  main.cpp
+d:\projects\learnopengl\self_learn\learn2\learn2\shader.h(56): warning C4101: “e”: 未引用的局部变量
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(186): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(244): warning C4305: “初始化”: 从“double”到“float”截断
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(312): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(313): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(317): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(318): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(320): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(321): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(330): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Learn2.vcxproj -> D:\projects\learnOpenGL\self_learn\Learn2\Debug\Learn2.exe
