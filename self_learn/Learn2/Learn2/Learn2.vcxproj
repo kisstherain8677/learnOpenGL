@@ -133,6 +133,8 @@
     <ClCompile Include="stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Shaders\blending.fs" />
+    <None Include="Shaders\blending.vs" />
     <None Include="Shaders\stencil_single_color.fs" />
     <None Include="Shaders\stencil_testing.fs" />
     <None Include="Shaders\stencil_testing.vs" />

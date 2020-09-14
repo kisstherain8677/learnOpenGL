@@ -52,5 +52,11 @@
     <None Include="Shaders\stencil_single_color.fs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="Shaders\blending.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shaders\blending.fs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
