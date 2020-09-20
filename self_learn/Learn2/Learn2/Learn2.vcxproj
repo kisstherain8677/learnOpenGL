@@ -135,6 +135,8 @@
   <ItemGroup>
     <None Include="Shaders\blending.fs" />
     <None Include="Shaders\blending.vs" />
+    <None Include="Shaders\frame.fs" />
+    <None Include="Shaders\frame.vs" />
     <None Include="Shaders\stencil_single_color.fs" />
     <None Include="Shaders\stencil_testing.fs" />
     <None Include="Shaders\stencil_testing.vs" />

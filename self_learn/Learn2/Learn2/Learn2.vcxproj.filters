@@ -58,5 +58,11 @@
     <None Include="Shaders\blending.fs">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="Shaders\frame.vs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Shaders\frame.fs">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

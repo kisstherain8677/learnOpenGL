@@ -1,12 +1,11 @@
 ﻿  main.cpp
 d:\projects\learnopengl\self_learn\learn2\learn2\shader.h(56): warning C4101: “e”: 未引用的局部变量
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(224): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(266): warning C4018: “<”: 有符号/无符号不匹配
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(329): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(330): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(334): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(335): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(337): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(338): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(347): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(259): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(371): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(372): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(376): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(377): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(379): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(380): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\projects\learnopengl\self_learn\learn2\learn2\main.cpp(389): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   Learn2.vcxproj -> D:\projects\learnOpenGL\self_learn\Learn2\Debug\Learn2.exe
